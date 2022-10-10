@@ -1,13 +1,6 @@
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
 
-// SHADOW
-
-@mixin shadow {
-  box-shadow: 8px 8px 16px #bebebe,
-    -8px -8px 16px #ffffff;
-}
-
-// FONTS 
+// FONTS
 
 @font-face {
   font-family: "nova-bold";
@@ -33,4 +26,4 @@ $gray5: #b7bdc4;
 $green: #5fb523;
 $blue: rgb(50, 111, 182);
 $dark-blue: rgb(41, 87, 142);
-$yellow: #f2cc8f;
+$yellow: yellow(255, 220, 130);

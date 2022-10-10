@@ -58,8 +58,22 @@ nav {
 }
 
 .hamburger {
-  width: 2rem;
+  width: 3rem;
   cursor: pointer;
+}
+
+.hamburger.active {
+  display: none;
+}
+
+.hamburger-close {
+  display: none;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.hamburger-close.active {
+  display: block;
 }
 
 .nav-links li a {
