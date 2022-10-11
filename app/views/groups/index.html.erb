@@ -6,9 +6,11 @@
   <% @groups.each do |group| %>
     <%= render group %>
     <p>
-      <%= link_to "Show this group", group %>
+      <%= link_to "Show this category", group_path(group) %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New group", new_group_path %>
+<%= link_to new_group_path do %>
+  <%= image_tag 'add-button.png', :class => 'action-icon', :alt => "add new"%>
+<%end%>

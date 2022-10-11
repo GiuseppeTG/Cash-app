@@ -1,17 +1,9 @@
 <div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
+  <h3>
     <%= group.name %>
-  </p>
+  </h3>
 
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
+  <%= image_tag group.icon, :class => 'group-icon' %>
 
-  <p>
-    <strong>User:</strong>
-    <%= group.user_id %>
-  </p>
-
+  <p><%= "Total: #{group_total(group)}"%></p>
 </div>

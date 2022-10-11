@@ -1,5 +1,21 @@
 @import 'variables.scss';
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $nova-light;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  overflow-y: hidden;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -88,4 +104,9 @@ nav {
   cursor: pointer;
   font-family: $nova-light;
   font-size: 1rem;
+}
+
+.action-icon {
+  width: 2rem;
+  height: 2rem;
 }
