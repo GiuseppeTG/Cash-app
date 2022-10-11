@@ -135,8 +135,6 @@ nav {
   color: $yellow;
 }
 
-.add-icon {}
-
 .return-icon {
   display: flex;
   justify-content: center;
@@ -150,8 +148,6 @@ nav {
   height: 2rem;
   color: white;
 }
-
-.edit-icon {}
 
 // SPLASH
 
@@ -297,7 +293,7 @@ nav {
   }
 }
 
-// GROUPS 
+// GROUPS
 
 .category-container {
   border: rgba(255, 255, 255, 0.398) solid 1px;
@@ -400,7 +396,7 @@ nav {
   margin-bottom: 1rem;
 
   label {
-    color: white
+    color: white;
   }
 
   input {
