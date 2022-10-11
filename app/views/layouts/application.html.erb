@@ -7,9 +7,11 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= javascript_include_tag "script", 'data-turbo-track': 'reload'%>
   </head>
 
   <body>
+
     <% if user_signed_in?%>
       <nav>
         <div class="logo-container">
@@ -20,9 +22,7 @@
           <li class="nav-link">
             <%= link_to "Groups", groups_path%>
           </li>
-          <%# <li class="nav-link">
-            <%= link_to "Expenses", expenses_path%>
-          <%# </li> %>
+
           <li class="nav-link">
             <div id="logout-button">
               <%= button_to "Logout", destroy_user_session_path, { method: :delete, data: { turbo:false }}%>
@@ -33,13 +33,14 @@
         <%= image_tag 'close.png', :class => "hamburger-close"%>
       </nav>
     <%end%>
-    <% if user_signed_in?%>
-      <%= button_to "Logout", destroy_user_session_path, { method: :delete, data: { turbo:false }} %>
-    <% end %>
-    <%# <p class="notice"><%= notice %></p>
-  <%# <p class="alert"><%= alert %></p>
-<main>
-  <%= yield %>
-</main>
-</body>
+    <main>
+      <% if user_signed_in?%>
+        <div class="logout-button">
+          <%= button_to "Log out", destroy_user_session_path, { method: :delete, data: { turbo:false }}%>
+        </div>
+      <% end %>
+      <%= yield %>
+    </main>
+
+  </body>
 </html>

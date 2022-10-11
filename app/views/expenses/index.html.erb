@@ -1,14 +1,22 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Expenses</h1>
-
-<div id="expenses">
-  <% @expenses.each do |expense| %>
-    <%= render expense %>
-    <p>
-      <%= link_to "Show this expense", group_expense_path(@group, expense) %>
-    </p>
+<section class="expenses-section">
+  <%= link_to groups_path, :class => "return-icon" do %>
+    <i class="fa-solid fa-chevron-left action-icon"></i>
   <% end %>
-</div>
-<%= link_to "Back to category", group_path(@group) %>
-<%= link_to "New expense", new_group_expense_path(@group, @expense) %>
+  <%= image_tag "#{@group.icon}", :class => "group-icon group-icon-big" %>
+  <h3 class="expense-group"><%="#{@group.name}: $#{group_total(@group)}"%></h3>
+
+  <h1>Expenses</h1>
+
+  <%= link_to new_group_expense_path(@group, @expense), :class => "add-category" do%>
+    <%= icon('fa-regular', 'add', :class => 'action-icon add-icon')%>
+    <p>Add a new Expense</p>
+  <% end %>
+
+  <div id="expenses">
+    <% @expenses.each do |expense| %>
+      <%= render expense %>
+    <% end %>
+  </div>
+</section>

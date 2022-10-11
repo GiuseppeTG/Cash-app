@@ -7,6 +7,7 @@ gem 'devise'
 gem 'htmlbeautifier'
 gem 'rswag'
 gem 'rubocop'
+gem 'font-awesome-sass'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'

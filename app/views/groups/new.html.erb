@@ -1,9 +1,7 @@
-<h1>New group</h1>
+<%= link_to groups_path, :class => "return-icon" do %>
+  <i class="fa-solid fa-chevron-left action-icon"></i>
+<% end %>
+
+<h1>New category</h1>
 
 <%= render "form", group: @group %>
-
-<br>
-
-<div>
-  <%= link_to "Back to categories", groups_path %>
-</div>

@@ -1,24 +1,47 @@
-# README
+# Cash app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> An app to handle your expenses on custom cateogires.
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby on Rails
+- PostgreSQL
+- Rswag
+- SASS
 
-* System dependencies
+## Live version
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+## Getting Started
 
-* How to run the test suite
+- Clone this repo
+- Run rails s in your terminal
+- Server run on localhost:3000
 
-* Services (job queues, cache servers, search engines, etc.)
+## Authors
 
-* Deployment instructions
+👤 **Giuseppe Tomasini**
 
-* ...
+- GitHub: [@GiuseppeTG](https://github.com/GiuseppeTG)
+- Twitter: [@giusetomasini](https://twitter.com/giusetomasini)
+- LinkedIn: [Giuseppe Tomasini](https://www.linkedin.com/in/giuseppe-tomasini-67ba101a8/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+Original design idea by **Gregoire Vella** [@Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
+
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
