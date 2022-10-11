@@ -1,17 +1,10 @@
-<div id="<%= dom_id expense %>">
-  <p>
-    <strong>Name:</strong>
-    <%= expense.name %>
-  </p>
+<div id="<%= dom_id expense %>" class="expense-container">
+  <h3><%= expense.name %></h3>
 
-  <p>
-    <strong>Amount:</strong>
-    <%= expense.amount %>
-  </p>
+  <p><%= "$#{expense.amount}" %></p>
 
-  <p>
-    <strong>User:</strong>
-    <%= expense.user_id %>
-  </p>
+  <p><%= expense.created_at.strftime('%b %d, %Y') %></p>
+
+  <%= button_to "Delete", group_expense_path(@group, expense), method: :delete, :class => "delete-button" %>
 
 </div>

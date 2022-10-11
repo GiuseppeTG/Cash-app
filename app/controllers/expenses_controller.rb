@@ -4,7 +4,7 @@ class ExpensesController < ApplicationController
 
   # GET /expenses or /expenses.json
   def index
-    @expenses = Group.find(params[:group_id]).expenses
+    @expenses = Group.find(params[:group_id]).expenses.order(created_at: :desc)
     @group = Group.find(params[:group_id])
   end
 
@@ -62,7 +62,7 @@ class ExpensesController < ApplicationController
     @expense.destroy
 
     respond_to do |format|
-      format.html { redirect_to expenses_url, notice: 'Expense was successfully destroyed.' }
+      format.html { redirect_to group_expenses_path(@group), notice: 'Expense was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
