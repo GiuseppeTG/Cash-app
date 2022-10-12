@@ -6,7 +6,6 @@
 
 - Ruby on Rails
 - PostgreSQL
-- Rswag
 - SASS
 
 ## Live version
