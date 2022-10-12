@@ -443,7 +443,7 @@ nav {
 
   .checkboxes-container {
     display: grid;
-    grid-template-columns: max(100%);
+    grid-template-columns: auto;
     grid-template-rows: auto;
     margin-top: 0.5rem;
   }
@@ -455,5 +455,4 @@ nav {
   input {
     transform: translateY(1rem);
   }
-
 }
