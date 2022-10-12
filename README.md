@@ -6,11 +6,11 @@
 
 - Ruby on Rails
 - PostgreSQL
-- Rswag
 - SASS
 
 ## Live version
 
+https://warm-ridge-34734.herokuapp.com/
 
 
 ## Getting Started
