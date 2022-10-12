@@ -15,7 +15,7 @@
 
     <div class="create-new-input">
       <%= form.label :name, style: "display: block" %>
-      <%= form.text_field :name, :required => true %>
+      <%= form.text_field :name, :required => true, :maxlength => "12"%>
     </div>
 
     <div class="create-new-input">
@@ -23,9 +23,11 @@
       <%= form.number_field :amount, :required => true %>
     </div>
 
-    <div>
+    <div class="multiple-checkbox">
       <%= form.label :groups, 'Other categories (optional)', style: "display: block" %>
-      <%= form.collection_check_boxes(:groups, @groups, :id, :name)%>
+      <div class="checkboxes-container">
+        <%= form.collection_check_boxes(:groups, @groups, :id, :name)%>
+      </div>
     </div>
 
     <div class="create-new-action">
