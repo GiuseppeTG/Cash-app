@@ -23,6 +23,11 @@
       <%= form.number_field :amount, :required => true %>
     </div>
 
+    <div>
+      <%= form.label :groups, 'Other categories (optional)', style: "display: block" %>
+      <%= form.collection_check_boxes(:groups, @groups, :id, :name)%>
+    </div>
+
     <div class="create-new-action">
       <%= form.submit %>
     </div>

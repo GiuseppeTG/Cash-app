@@ -186,15 +186,21 @@ nav {
 
 // LOGIN
 
+.logout-button .button_to {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
 .logout-button .button_to button {
   background: none;
   padding: 0.5rem;
   font-size: 1rem;
-  border: solid black 1px;
+  border: solid rgb(255, 255, 255) 1px;
   border-radius: 0.25rem;
   transition: 0.2s;
   color: aliceblue;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .login-section {
@@ -294,6 +300,11 @@ nav {
 }
 
 // GROUPS
+
+.title-return {
+  display: flex;
+  margin-top: 1rem;
+}
 
 .category-container {
   border: rgba(255, 255, 255, 0.398) solid 1px;
