@@ -4,7 +4,7 @@ class GroupsController < ApplicationController
 
   # GET /groups or /groups.json
   def index
-    @groups = Group.where(user_id: current_user)
+    @groups = Group.includes([:expenses]).where(user_id: current_user)
   end
 
   # GET /groups/1 or /groups/1.json

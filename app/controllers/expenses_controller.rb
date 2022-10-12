@@ -17,6 +17,8 @@ class ExpensesController < ApplicationController
   def new
     @expense = Expense.new
     @group = Group.find(params[:group_id])
+    @groups = Group.where(user_id: current_user)
+    @groups = @groups.where.not(id: params[:group_id])
   end
 
   # GET /expenses/1/edit
@@ -30,6 +32,9 @@ class ExpensesController < ApplicationController
     @expense = Expense.new(expense_params)
     @expense.user = current_user
     @expense.groups.push(@group)
+    params[:expense][:groups].each do |g_id|
+      @expense.groups.push(Group.find(g_id)) unless g_id == ''
+    end
 
     respond_to do |format|
       if @expense.save
@@ -76,6 +81,6 @@ class ExpensesController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def expense_params
-    params.require(:expense).permit(:name, :amount)
+    params.require(:expense).permit(:name, :amount, :groups)
   end
 end

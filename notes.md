@@ -26,8 +26,6 @@ To open settings.json:
 >- Under `Emmet: Prefereces`, click on `Edit in settings.json`
 
 
-
-
 PETS
 https://img.freepik.com/premium-vector/cute-english-bulldog-cartoon-icon_42750-685.jpg
 
@@ -36,6 +34,9 @@ https://img.freepik.com/free-vector/burger-with-fried-chicken-french-fries-soda-
 
 FORNITURE
 https://cdn.dribbble.com/users/427368/screenshots/11957384/media/b30716e802df7b4c46057fc44bf207d2.jpg?compress=1&resize=400x300
+
+BUS
+https://cdn-icons-png.flaticon.com/512/5030/5030991.png
 
 TRASH CAN ICON:
 <i class="fa-solid fa-trash"></i>
