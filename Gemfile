@@ -6,7 +6,6 @@ gem 'cancancan'
 gem 'devise'
 gem 'font-awesome-sass'
 gem 'htmlbeautifier'
-gem 'rswag'
 gem 'rubocop'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
