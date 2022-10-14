@@ -1,17 +1,16 @@
 # Cash app
 
-> An app to handle your expenses on custom cateogires.
+>Cash-app is a mobile app that allows you to group your expenses in different categories to keep track of them. Database is made using postgresql.
 
 ## Built With
 
 - Ruby on Rails
 - PostgreSQL
-- Rswag
 - SASS
 
 ## Live version
 
-
+https://warm-ridge-34734.herokuapp.com/
 
 ## Getting Started
 
