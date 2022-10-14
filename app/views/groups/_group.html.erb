@@ -1,0 +1,17 @@
+<div id="<%= dom_id group %>" class="category-container">
+
+  <%= link_to  group_expenses_path(group) do %>
+    <%= image_tag group.icon, :class => 'group-icon', :alt => "#{group.name} icon" %>
+  <% end %>
+
+  <div class="name-date">
+    <h3><%= group.name %></h3>
+    <p><%= group.created_at.strftime('%b %d, %Y') %></p>
+  </div>
+
+  <div class="total-delete">
+    <p><strong><%= "Total: $#{group_total(group)}"%></strong></p>
+    <%= button_to "Delete", group, method: :delete, :class => "delete-button" %>
+  </div>
+
+</div>

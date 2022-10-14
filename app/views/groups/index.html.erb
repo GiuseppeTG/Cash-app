@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Categories</h1>
+
+<%= link_to new_group_path, :class => "add-category" do %>
+  <%= icon('fa-regular', 'add', :class => 'action-icon add-icon')%>
+  <p>Add a new Category</p>
+<%end%>
+
+<div id="groups">
+  <% @groups.each do |group| %>
+
+    <%= render group %>
+
+  <% end %>
+</div>

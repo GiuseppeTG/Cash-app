@@ -1,0 +1,30 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+
+// FONTS
+
+@font-face {
+  font-family: "nova-bold";
+  src: url("nova-bold.otf");
+}
+
+@font-face {
+  font-family: "nova-light";
+  src: url("nova-light.otf");
+}
+
+$nova-bold: 'nova-bold', 'sans-serif';
+$nova-light: 'nova-light', 'sans-serif';
+
+// COLORS
+
+$black: #2e2e2e;
+$gray1: #434b54;
+$gray2: #47515d;
+$gray3: #5a6168;
+$gray4: #6d757e;
+$gray5: #b7bdc4;
+$green: #5fb523;
+$blue: rgb(50, 111, 182);
+$dark-blue: rgb(41, 87, 142);
+$yellow: yellow(255, 220, 130);
+$white: rgba(240, 240, 240, 0.965);

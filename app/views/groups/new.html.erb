@@ -1,0 +1,8 @@
+<div class="title-return">
+  <h1>New category</h1>
+  <%= link_to groups_path, :class => "return-icon" do %>
+    <i class="fa-solid fa-chevron-left action-icon"></i>
+  <% end %>
+</div>
+
+<%= render "form", group: @group %>

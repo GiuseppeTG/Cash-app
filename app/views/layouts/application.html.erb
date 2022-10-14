@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CashApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <%= javascript_include_tag "script", 'data-turbo-track': 'reload'%>
+  </head>
+
+  <body>
+
+    <% if user_signed_in?%>
+      <nav>
+        <div class="logo-container">
+          <%= image_tag("https://cdn-icons-png.flaticon.com/256/7648/7648258.png", :alt => "logo", :class => "logo") %>
+          <h2><%="#{current_user[:name]}"%></h2>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link">
+            <%= link_to "Groups", groups_path%>
+          </li>
+
+          <li class="nav-link">
+            <div id="logout-button">
+              <%= button_to "Logout", destroy_user_session_path, { method: :delete, data: { turbo:false }}%>
+            </div>
+          </li>
+        </ul>
+        <%= image_tag 'hamburger.png', :class => "hamburger"%>
+        <%= image_tag 'close.png', :class => "hamburger-close"%>
+      </nav>
+    <%end%>
+    <main>
+      <% if user_signed_in?%>
+        <div class="logout-button">
+          <%= button_to "Log out", destroy_user_session_path, { method: :delete, data: { turbo:false }}%>
+        </div>
+      <% end %>
+      <%= yield %>
+    </main>
+
+  </body>
+</html>
